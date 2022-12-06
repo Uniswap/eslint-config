@@ -1,6 +1,6 @@
 {
   "root": true,
   "extends": [
-    "./react.js"
+    "./node.js"
   ]
 }

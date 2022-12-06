@@ -1,4 +1,4 @@
-const { react: restrictedImports } = require('./restrictedImports.js')
+const { react: restrictedImports } = require('./restrictedImports')
 
 module.exports = {
   extends: [require.resolve('./node.js'), 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
