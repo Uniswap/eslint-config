@@ -34,4 +34,4 @@ If you're a VSCode user, consider installing the official [ESLing plugin](https:
 
 https://github.com/Uniswap/eslint-config/blob/4b95491cf0ea411db950174f21432ea7c9d60370/.vscode/settings.json#L1-L6
 
-This will automatically run `eslint --fix` on saved.
+This will automatically run `eslint --fix` on save.
