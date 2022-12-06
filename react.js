@@ -1,5 +1,4 @@
-const OFF = 0
-const ERROR = 2
+const { react: restrictedImports } = require('./restrictedImports.js')
 
 module.exports = {
   extends: [require.resolve('./node.js'), 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
@@ -13,12 +12,20 @@ module.exports = {
     },
   },
   rules: {
-    'react/react-in-jsx-scope': OFF,
-    'react/jsx-curly-brace-presence': [ERROR, { props: 'never', children: 'never' }],
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
   },
   settings: {
     react: {
       version: 'detect',
     },
   },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      rules: {
+        '@typescript-eslint/no-restricted-imports': ['error', restrictedImports],
+      },
+    },
+  ],
 }

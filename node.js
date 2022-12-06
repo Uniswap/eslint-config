@@ -1,6 +1,3 @@
-const OFF = 0
-const ERROR = 2
-
 module.exports = {
   env: {
     es6: true,
@@ -11,26 +8,19 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
   },
-  settings: {
-    'import/resolver': {
-      typescript: {
-        alwaysTryTypes: true,
-      },
-    },
-  },
   rules: {
     'prettier/prettier': [
-      ERROR,
+      'error',
       {
         semi: false,
         singleQuote: true,
         printWidth: 120,
       },
     ],
-    'import/no-unused-modules': [ERROR, { unusedExports: true }],
-    'unused-imports/no-unused-imports': ERROR,
-    'simple-import-sort/imports': ERROR,
-    'simple-import-sort/exports': ERROR,
+    'import/no-unused-modules': ['error', { unusedExports: true }],
+    'unused-imports/no-unused-imports': 'error',
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
   },
   overrides: [
     {
@@ -49,45 +39,12 @@ module.exports = {
         },
       },
       rules: {
-        '@typescript-eslint/no-explicit-any': OFF,
-        '@typescript-eslint/ban-ts-comment': OFF,
-        '@typescript-eslint/ban-ts-ignore': OFF,
-        '@typescript-eslint/explicit-module-boundary-types': OFF,
-        '@typescript-eslint/explicit-function-return-type': OFF,
-        '@typescript-eslint/no-restricted-imports': [
-          'error',
-          {
-            paths: [
-              {
-                name: '@ethersproject/providers',
-                message: 'Please only use Providers instantiated in constants/providers to improve traceability.',
-                allowTypeImports: true,
-              },
-              {
-                name: 'ethers',
-                message: "Please import from '@ethersproject/module' directly to support tree-shaking.",
-              },
-              {
-                name: 'styled-components',
-                message: 'Please import from styled-components/macro.',
-              },
-              {
-                name: '@lingui/macro',
-                importNames: ['t'],
-                message: 'Please use <Trans> instead of t.',
-              },
-            ],
-            patterns: [
-              {
-                group: ['**/dist'],
-                message: 'Do not import from dist/ - this is an implementation detail, and breaks tree-shaking.',
-              },
-              {
-                group: ['!styled-components/macro'],
-              },
-            ],
-          },
-        ],
+        '@typescript-eslint/no-explicit-any': 'off',
+        '@typescript-eslint/ban-ts-comment': 'off',
+        '@typescript-eslint/ban-ts-ignore': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/no-restricted-imports': ['error', exports.restrictedImports],
       },
     },
     {
