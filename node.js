@@ -1,3 +1,5 @@
+const { node: restrictedImports } = require('./restrictedImports')
+
 module.exports = {
   env: {
     es6: true,
@@ -44,7 +46,7 @@ module.exports = {
         '@typescript-eslint/ban-ts-ignore': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
-        '@typescript-eslint/no-restricted-imports': ['error', exports.restrictedImports],
+        '@typescript-eslint/no-restricted-imports': ['error', restrictedImports],
       },
     },
     {
