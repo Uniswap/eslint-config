@@ -31,10 +31,5 @@ exports.react = {
       message: 'Please use <Trans> instead of t.',
     },
   ],
-  patterns: [
-    ...exports.node.patterns,
-    {
-      group: ['!styled-components/macro'],
-    },
-  ],
+  patterns: exports.node.patterns,
 }
