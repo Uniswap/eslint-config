@@ -20,6 +20,7 @@ module.exports = {
       },
     ],
     'import/no-unused-modules': ['error', { unusedExports: true }],
+    'object-shorthand': ['error', 'always'],
     'unused-imports/no-unused-imports': 'error',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
