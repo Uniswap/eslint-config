@@ -1,4 +1,4 @@
-const { react: restrictedImports } = require('./restrictedImports')
+const { react: reactRestrictedImports } = require('./restrictedImports')
 
 module.exports = {
   extends: [require.resolve('./node.js'), 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
@@ -24,7 +24,7 @@ module.exports = {
     {
       files: ['*.ts', '*.tsx'],
       rules: {
-        '@typescript-eslint/no-restricted-imports': ['error', restrictedImports],
+        '@typescript-eslint/no-restricted-imports': ['error', reactRestrictedImports],
       },
     },
   ],
