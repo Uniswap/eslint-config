@@ -1,9 +1,0 @@
-{
-  "root": true,
-  "ignorePatterns": [
-    "dist"
-  ],
-  "extends": [
-    "./index.js"
-  ]
-}
