@@ -15,5 +15,5 @@ it('should have a correct configuration for a React file', async () => {
       extends: ['./react.js'],
     },
   })
-  expect(await linter.calculateConfigForFile('node.test.ts')).toMatchSnapshot({ parser: expect.any(String) })
+  expect(await linter.calculateConfigForFile('node.tsx')).toMatchSnapshot({ parser: expect.any(String) })
 })

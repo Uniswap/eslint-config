@@ -4,6 +4,7 @@ module.exports = {
   extends: [require.resolve('./node.js'), 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
   env: {
     browser: true,
+    node: false,
   },
   plugins: ['react', 'react-hooks'],
   parserOptions: {
