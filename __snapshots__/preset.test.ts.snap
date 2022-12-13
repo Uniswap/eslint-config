@@ -117,24 +117,12 @@ exports[`should have a correct configuration for a React file 1`] = `
       {
         "paths": [
           {
-            "allowTypeImports": true,
-            "message": "Please only use Providers instantiated in constants/providers to improve traceability.",
-            "name": "@ethersproject/providers",
-          },
-          {
             "message": "Please import from '@ethersproject/module' directly to support tree-shaking.",
             "name": "ethers",
           },
           {
             "message": "Please import from styled-components/macro.",
             "name": "styled-components",
-          },
-          {
-            "importNames": [
-              "t",
-            ],
-            "message": "Please use <Trans> instead of t.",
-            "name": "@lingui/macro",
           },
         ],
         "patterns": [
