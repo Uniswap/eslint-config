@@ -1,10 +1,10 @@
 # @uniswap/eslint-config
 
-Uniswap ESLint config for Typescript and React project with standards and best practices.
+Uniswap's ESLint config to enforce coding standards and best practices.
 
-- Typescript and Jest support
+- TypeScript and Jest support
 - Seamless Prettier integration
-- Separate environment for Node.js and React projects
+- Separate environments for Node.js and React
 
 ## Installation
 
@@ -20,6 +20,8 @@ yarn add --dev eslint @uniswap/eslint-config
 }
 ```
 
+> This will extend ESLint config for Node.js 
+
 or:
 
 ```json
@@ -30,7 +32,7 @@ or:
 
 #### VSCode
 
-If you're a VSCode user, consider installing the official [ESLing plugin](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and adding the following to your `.vscode/settings.json` config:
+If you're a VSCode user, consider installing the official [ESLint plugin](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and copying `./.vscode/settings.json` to your own `.vscode/settings.json` configuration file:
 
 https://github.com/Uniswap/eslint-config/blob/4b95491cf0ea411db950174f21432ea7c9d60370/.vscode/settings.json#L1-L6
 
