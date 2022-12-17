@@ -28,6 +28,8 @@
     "@typescript-eslint/parser": "^5.45.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-disable": "^2.0.3",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^27.1.6",
     "eslint-plugin-prettier": "^4.2.1",
