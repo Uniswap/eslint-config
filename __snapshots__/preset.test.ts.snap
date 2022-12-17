@@ -21,8 +21,8 @@ exports[`should have a correct configuration for a React file 1`] = `
     "unused-imports",
     "simple-import-sort",
     "import",
-    "prettier",
     "@typescript-eslint",
+    "prettier",
     "react-hooks",
     "react",
   ],
@@ -92,7 +92,7 @@ exports[`should have a correct configuration for a React file 1`] = `
       "off",
     ],
     "@typescript-eslint/no-extra-semi": [
-      "error",
+      "off",
     ],
     "@typescript-eslint/no-inferrable-types": [
       "error",
@@ -1003,9 +1003,9 @@ exports[`should have a correct configuration for a TypeScript file 1`] = `
     "unused-imports",
     "simple-import-sort",
     "import",
-    "prettier",
     "@typescript-eslint",
     "jest",
+    "prettier",
   ],
   "reportUnusedDisableDirectives": undefined,
   "rules": {
@@ -1073,7 +1073,7 @@ exports[`should have a correct configuration for a TypeScript file 1`] = `
       "off",
     ],
     "@typescript-eslint/no-extra-semi": [
-      "error",
+      "off",
     ],
     "@typescript-eslint/no-inferrable-types": [
       "error",
@@ -1097,11 +1097,6 @@ exports[`should have a correct configuration for a TypeScript file 1`] = `
       "error",
       {
         "paths": [
-          {
-            "allowTypeImports": true,
-            "message": "Please only use Providers instantiated in constants/providers to improve traceability.",
-            "name": "@ethersproject/providers",
-          },
           {
             "message": "Please import from '@ethersproject/module' directly to support tree-shaking.",
             "name": "ethers",

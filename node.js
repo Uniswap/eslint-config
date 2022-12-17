@@ -5,8 +5,8 @@ module.exports = {
     es6: true,
     node: true,
   },
-  plugins: ['prettier', 'import', 'simple-import-sort', 'unused-imports'],
-  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+  plugins: ['import', 'simple-import-sort', 'unused-imports'],
+  extends: ['eslint:recommended'],
   parserOptions: {
     sourceType: 'module',
   },
@@ -59,6 +59,11 @@ module.exports = {
       },
       extends: ['plugin:jest/recommended'],
       plugins: ['jest'],
+    },
+    {
+      files: ['*'],
+      plugins: ['prettier'],
+      extends: ['plugin:prettier/recommended'],
     },
   ],
 }
