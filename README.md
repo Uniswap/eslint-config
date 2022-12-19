@@ -14,6 +14,8 @@ yarn add --dev eslint @uniswap/eslint-config
 
 ## Usage
 
+> Make sure to include `require('@uniswap/eslint-config/load')` at the top of your ESLint config. This loads a `@rushstack/eslint-patch/modern-module-resolution` patch so that ESLint loads any plugins installed by this package. 
+
 ```js
 require('@uniswap/eslint-config/load')
 
@@ -31,8 +33,6 @@ module.exports = {
   extends: '@uniswap/eslint-config/react'
 }
 ```
-
-> Make sure to include `require('@uniswap/eslint-config/load')` at the top of your ESLint config. This loads a `@rushstack/eslint-patch/modern-module-resolution` patch to make ESLint load plugins installed by this package. 
 
 #### VSCode
 
