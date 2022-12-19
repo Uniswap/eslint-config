@@ -1554,6 +1554,11 @@
     tiny-glob "^0.2.9"
     tslib "^2.4.0"
 
+"@rushstack/eslint-patch@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
+  integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
+
 "@semantic-release/changelog@^6.0.2":
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/@semantic-release/changelog/-/changelog-6.0.2.tgz#fdcdbd368788c8fcc69c4af29bf2064f4afb45f4"
@@ -2922,6 +2927,13 @@ eslint-module-utils@^2.7.3:
   dependencies:
     debug "^3.2.7"
 
+eslint-plugin-cypress@^2.12.1:
+  version "2.12.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-cypress/-/eslint-plugin-cypress-2.12.1.tgz#9aeee700708ca8c058e00cdafe215199918c2632"
+  integrity sha512-c2W/uPADl5kospNDihgiLc7n87t5XhUbFDoTl6CfVkmG+kDAb5Ux10V9PoLPu9N+r7znpc+iQlcmAqT1A/89HA==
+  dependencies:
+    globals "^11.12.0"
+
 eslint-plugin-import@^2.26.0:
   version "2.26.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.26.0.tgz#f812dc47be4f2b72b478a021605a59fc6fe8b88b"
@@ -3444,7 +3456,7 @@ glob@^8.0.1:
     minimatch "^5.0.1"
     once "^1.3.0"
 
-globals@^11.1.0:
+globals@^11.1.0, globals@^11.12.0:
   version "11.12.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-11.12.0.tgz#ab8795338868a0babd8525758018c2a7eb95c42e"
   integrity sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==

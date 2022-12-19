@@ -14,19 +14,23 @@ yarn add --dev eslint @uniswap/eslint-config
 
 ## Usage
 
-```json
-{
-  "extends": "@uniswap"
+> Make sure to include `require('@uniswap/eslint-config/load')` at the top of your ESLint config. This loads a `@rushstack/eslint-patch/modern-module-resolution` patch so that ESLint loads any plugins installed by this package. 
+
+```js
+require('@uniswap/eslint-config/load')
+
+module.exports = {
+  extends: '@uniswap/eslint-config/node'
 }
 ```
 
-> This will extend ESLint config for Node.js 
-
 or:
 
-```json
-{
-  "extends": "@uniswap/eslint-config/react"
+```js
+require('@uniswap/eslint-config/load')
+
+module.exports = {
+  extends: '@uniswap/eslint-config/react'
 }
 ```
 
