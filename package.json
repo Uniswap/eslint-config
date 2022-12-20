@@ -21,7 +21,8 @@
   "files": [
     "restrictedImports.js",
     "node.js",
-    "react.js"
+    "react.js",
+    "load.js"
   ],
   "dependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
