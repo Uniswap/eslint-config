@@ -8,6 +8,7 @@ module.exports = {
   },
   plugins: ['react', 'react-hooks'],
   parserOptions: {
+    ecmaVersion: 2020,
     ecmaFeatures: {
       jsx: true,
     },
