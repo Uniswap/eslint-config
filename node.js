@@ -8,6 +8,7 @@ module.exports = {
   plugins: ['import', 'simple-import-sort', 'unused-imports'],
   extends: ['eslint:recommended'],
   parserOptions: {
+    ecmaVersion: 2020,
     sourceType: 'module',
   },
   rules: {
