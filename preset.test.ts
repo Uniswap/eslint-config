@@ -18,6 +18,15 @@ it('should have a correct configuration for a React file', async () => {
   expect(await linter.calculateConfigForFile('file.tsx')).toMatchSnapshot({ parser: expect.any(String) })
 })
 
+it('should have a correct configuration for a React Native file', async () => {
+  const linter = new ESLint({
+    overrideConfig: {
+      extends: ['./react-native.js'],
+    },
+  })
+  expect(await linter.calculateConfigForFile('file.tsx')).toMatchSnapshot({ parser: expect.any(String) })
+})
+
 it('should have a correct configuration for a Jest file', async () => {
   const linter = new ESLint({
     overrideConfig: {
