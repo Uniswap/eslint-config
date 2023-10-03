@@ -1,0 +1,19 @@
+name: CI
+on: push
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/setup
+      - uses: actions/cache@v3
+        with:
+          path: node_modules/.cache
+          key: ${{ runner.os }}-jest-${{ github.run_id }}
+          restore-keys: ${{ runner.os }}-jest-
+      - run: yarn test --coverage --maxWorkers=100%
+      - uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: false
+          flags: unit-tests
